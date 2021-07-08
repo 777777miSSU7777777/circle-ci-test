@@ -1,0 +1,15 @@
+version: 2.1
+
+jobs:
+	test:
+		docker:
+			- image: cimg/base:stable
+		steps:
+			- checkout
+			-run: \
+				echo "Test 123"
+
+workflows:
+	default_workflow:
+		jobs:
+			- test
