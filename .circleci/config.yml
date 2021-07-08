@@ -6,8 +6,7 @@ jobs:
             - image: cimg/base:stable
         steps:
             - checkout
-            - run: \
-                echo "Test 123"
+            - run: echo "Test 123"
 
 workflows:
     default_workflow:
